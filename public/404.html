@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Antonello Di Pede</title>
+    <!--
+      GitHub Pages è hosting statico: non sa nulla delle rotte gestite da
+      React Router (/education, /projects, ecc.). Se qualcuno apre direttamente
+      quell'URL o ricarica la pagina, GitHub cerca un file reale con quel nome,
+      non lo trova, e serve questo 404.html.
+
+      Questo script riscrive il percorso in query string e reindirizza a "/",
+      dove index.html lo intercetta e lo ripristina prima che React Router
+      monti l'app. Tecnica standard per SPA su GitHub Pages
+      (https://github.com/rafgraph/spa-github-pages).
+    -->
+    <script>
+      var pathSegmentsToKeep = 0; // 0 perché questo è un sito utente (root domain), non un project page
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          '//' +
+          l.hostname +
+          (l.port ? ':' + l.port : '') +
+          l.pathname
+            .split('/')
+            .slice(0, 1 + pathSegmentsToKeep)
+            .join('/') +
+          '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

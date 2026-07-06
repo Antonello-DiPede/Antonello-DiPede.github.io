@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  /* --- Palette base --- */
+  --color-bg: #08090c;
+  --color-amber: #ffb020;
+  --color-steel: #5ea8ff;
+  --color-violet: #8b5cf6;
+  --color-ink: #181000; /* testo scuro sui bottoni ambra */
+
+  /* --- Gerarchia testo --- */
+  --color-text: #f5f4f1; /* corpo base */
+  --color-heading: #f8f7f4; /* titoli */
+  --color-icon-text: #f0f0ee; /* testo/icone su superfici vetro */
+  --color-text-muted: #abb2c0; /* paragrafi secondari */
+  --color-text-dim: #8b92a0; /* metadati (località, ecc.) */
+  --color-nav-inactive: #9099a8; /* link nav non attivi */
+
+  /* --- Superfici "vetro" riutilizzabili --- */
+  --glass-bg: rgba(255, 255, 255, 0.055); /* pannello principale */
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-edge-highlight: rgba(255, 255, 255, 0.35); /* riflesso bordo superiore */
+  --glass-inner-glow: rgba(255, 255, 255, 0.03);
+  --glass-sheen: rgba(255, 255, 255, 0.16); /* riflesso animato */
+  --nav-glass-bg: rgba(255, 255, 255, 0.05);
+  --nav-glass-border: rgba(255, 255, 255, 0.1);
+  --nav-glass-highlight: rgba(255, 255, 255, 0.15);
+
+  /* --- Superfici interattive (bottoni icona, input, badge) --- */
+  --surface-bg: rgba(255, 255, 255, 0.08);
+  --surface-border: rgba(255, 255, 255, 0.14);
+  --surface-border-soft: rgba(255, 255, 255, 0.15);
+  --surface-active-bg: rgba(255, 255, 255, 0.14);
+  --input-bg: rgba(255, 255, 255, 0.06);
+  --icon-inset-highlight: rgba(255, 255, 255, 0.2);
+
+  /* --- Ombre e glow --- */
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --glow-amber-strong: rgba(255, 176, 32, 0.6);
+  --glow-amber-soft: rgba(255, 176, 32, 0.4);
+  --glow-amber-blob: rgba(255, 176, 32, 0.55);
+  --glow-steel: rgba(94, 168, 255, 0.45);
+  --glow-steel-soft: rgba(94, 168, 255, 0.1);
+  --glow-violet: rgba(139, 92, 246, 0.35);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: #f5f4f1;
+}
+
+/* --- Design system animations --- */
+@keyframes float-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, -25px) scale(1.12); }
+}
+@keyframes float-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, 30px) scale(1.08); }
+}
+@keyframes float-c {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, 20px) scale(1.15); }
+}
+@keyframes sheen-move {
+  0% { transform: translateX(-10%) rotate(8deg); }
+  100% { transform: translateX(220%) rotate(8deg); }
+}
+@keyframes lock-swing {
+  0%, 16% { transform: rotate(0deg); }
+  40%, 62% { transform: rotate(-52deg); }
+  86%, 100% { transform: rotate(0deg); }
+}
+@keyframes halo-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Rispetta le preferenze di accessibilità: nessuna animazione se l'utente
+   ha richiesto "reduced motion" nel sistema operativo. */
+@media (prefers-reduced-motion: no-preference) {
+  .blob-a { animation: float-a 13s ease-in-out infinite; }
+  .blob-b { animation: float-b 17s ease-in-out infinite; }
+  .blob-c { animation: float-c 21s ease-in-out infinite; }
+  .sheen { animation: sheen-move 7s ease-in-out infinite; }
+  .lock-shackle { animation: lock-swing 5.5s ease-in-out infinite; }
+  .lock-halo { animation: halo-pulse 5.5s ease-in-out infinite; }
+}
+
+.fade-content {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Focus visibile per navigazione da tastiera (accessibilità) */
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+}

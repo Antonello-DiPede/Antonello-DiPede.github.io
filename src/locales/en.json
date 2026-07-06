@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Home",
+    "education": "Education",
+    "projects": "Projects",
+    "experience": "Work Experience",
+    "contact": "Contact"
+  },
+  "home": {
+    "eyebrow": "ANTONELLO DI PEDE",
+    "role": "Cybersecurity Engineer",
+    "about": "Engineer and MSc Student in Cybersecurity at Politecnico di Torino and EURECOM with a keen interest in information security and cybersecurity. Experienced in software development, networking, system security, and machine learning. Solution-focused and proactive, I work best under pressure and enjoy learning new things.",
+    "cvButton": "Download CV",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn"
+  },
+  "education": {
+  "sectionLabel": "ACADEMIC TIMELINE",
+  "gpaLabel": "GPA",
+  "items": [
+    {
+      "institution": "EURECOM",
+      "location": "Biot, France",
+      "degree": "Diplôme d'Ingénieur in Digital Security",
+      "period": "Sep 2025 – Ongoing",
+      "gpa": "4.0/4.0 (Expected)"
+    },
+    {
+      "institution": "Politecnico di Torino",
+      "location": "Turin, Italy",
+      "degree": "MSc in Cybersecurity",
+      "period": "Sep 2024 – Ongoing",
+      "gpa": "4.0/4.0 (Expected)"
+    },
+    {
+      "institution": "Politecnico di Torino",
+      "location": "Turin, Italy",
+      "degree": "BSc in Computer Engineering",
+      "period": "Sep 2021 – Sep 2024",
+      "gpa": "3.614/4.0 (107/110)"
+    },
+    {
+      "institution": "I.I.S. G.B. Pentasuglia",
+      "location": "Matera, Italy",
+      "degree": "High School Diploma – Computer Science and Telecommunications",
+      "period": "Sep 2015 – Jun 2020",
+      "gpa": "3.9/4.0 (97/100)"
+    }
+  ]
+},
+"projects": {
+  "markLabel": "Mark",
+  "viewLabel": "View on GitHub",
+  "items": [
+    {
+      "title": "Side-Channel Power Attack on ASCON-AEAD128",
+      "description": "ASCON-AEAD128 firmware on an ARM Cortex-M4 microcontroller, attacked with Correlation Power Analysis that recovers the full 128-bit key in 21,500 power traces, with a Boolean-masked countermeasure validated via TVLA.",
+      "tags": ["C", "Python", "ChipWhisperer Husky", "ARM Cortex-M4"],
+      "mark": "19.5/20",
+      "repo": "https://github.com/Antonello-DiPede/SCA-Ascon128"
+    },
+    {
+      "title": "AI/ML for UE Positioning in 5G O-RAN",
+      "description": "Variational Autoencoder-based NLoS anomaly detection for UWB localization, reaching 97% detection accuracy, integrated as an xApp within the FlexRIC framework.",
+      "tags": ["Python", "PyTorch", "FlexRIC", "OpenAirInterface"],
+      "mark": "18/20",
+      "repo": "https://github.com/Antonello-DiPede/VAE_NLOS_DETECTION"
+    },
+    {
+      "title": "NXP S32K3X8EVB QEMU Emulation",
+      "description": "Extended QEMU's ARM Cortex-M7 support to emulate the S32K3X8EVB board, with UART/GPIO mapping, a FreeRTOS runtime, and a Memory Protection Unit prototype.",
+      "tags": ["C", "QEMU", "FreeRTOS", "ARM Cortex-M7"],
+      "mark": "30/30",
+      "repo": "https://github.com/Antonello-DiPede/NXP-S32K3X8EVB-Qemu-Emulation"
+    },
+    {
+      "title": "YouTube CDN Traffic Analysis",
+      "description": "Analyzed YouTube's CDN behavior on real network data using regression and clustering to estimate flow throughput and detect topology changes.",
+      "tags": ["Python", "Regression", "PCA", "K-Means"],
+      "mark": "27/30",
+      "repo": "https://github.com/Antonello-DiPede/Content-Delivery-Network-of-YouTube-traffic"
+    },
+    {
+      "title": "NTIRE 2026 — Robust AI-Generated Image Detection",
+      "description": "TransFusionNet: CLIP + DINOv2 token fusion with a spatial transformer to tell real images from AI-generated ones, robust to JPEG compression, blur, and resize.",
+      "tags": ["PyTorch", "CLIP", "DINOv2", "Transformers"],
+      "mark": "20/20",
+      "repo": "https://github.com/Antonello-DiPede/ImSecuSpring2026"
+    }
+  ]
+},
+"experience": {
+  "sectionLabel": "PROFESSIONAL EXPERIENCE",
+  "items": [
+    {
+      "company": "SAP Labs France",
+      "role": "Cybersecurity Intern – Security Testing",
+      "location": "Mougins, France",
+      "period": "Sep 2026 – Present",
+      "logo": "/logos/sap.png",
+      "initials": "SAP",
+      "description": ""
+    },
+    {
+      "company": "B.M. del dott. Battista Masellis",
+      "role": "SW & HW Technician",
+      "location": "Matera, Italy",
+      "period": "Jun 2017 – Sep 2024",
+      "logo": "/logos/bm.png",
+      "initials": "BM",
+      "description": "Diagnosed and repaired smartphones, computers, and electronic devices in a technical repair shop, configuring customized-built computers and setting hardware to customers' specifications. Provided technical support, communicating complex issues clearly to non-technical customers, and developed strong problem-solving skills, flexibility, and the ability to perform under pressure."
+    }
+  ]
+},
+"contact": {
+  "sectionLabel": "GET IN TOUCH",
+  "intro": "For job opportunities, collaborations, or just to say hi, feel free to reach out.",
+  "formTitle": "Send me a message",
+  "nameField": "Name",
+  "emailField": "Email",
+  "messageField": "Message",
+  "sendButton": "Send",
+  "sendingLabel": "Sending…",
+  "successBody": "Thanks! Your message has been sent, I'll get back to you as soon as possible.",
+  "errorPrefix": "Something went wrong sending this. In the meantime, email me directly at"
+},
+  "pages": {
+    "educationTitle": "Education",
+    "projectsTitle": "Projects",
+    "experienceTitle": "Work Experience",
+    "contactTitle": "Contact"
+    }
+}

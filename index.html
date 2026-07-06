@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- OWASP A05 (Security Misconfiguration): Content-Security-Policy di base.
+         GitHub Pages non permette di impostare header HTTP custom, quindi la
+         applichiamo qui via meta tag. Se in futuro si usa un dominio con
+         reverse proxy (es. Cloudflare), spostare questa policy in un header reale
+         E aggiungere lì anche "frame-ancestors" (via <meta> il browser lo ignora
+         del tutto, quindi non lo includiamo qui per non essere fuorvianti). -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://api.web3forms.com; base-uri 'self'; form-action 'self';"
+    />
+    <meta name="referrer-policy" content="strict-origin-when-cross-origin" />
+
+    <title>Antonello Di Pede — Cybersecurity Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio di Antonello Di Pede, Ingegnere Informatico e Studente Magistrale in Cybersecurity al Politecnico di Torino ed EURECOM."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Script esterno invece che inline: vedi public/restore-path.js per il perché -->
+    <script src="/restore-path.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

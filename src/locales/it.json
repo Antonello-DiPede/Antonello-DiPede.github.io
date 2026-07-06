@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Home",
+    "education": "Percorso di Studi",
+    "projects": "Progetti",
+    "experience": "Esperienza",
+    "contact": "Contatti"
+  },
+  "home": {
+    "eyebrow": "ANTONELLO DI PEDE",
+    "role": "Ingegnere Informatico — Cybersecurity",
+    "about": "Ingegnere e Studente Magistrale in Cybersecurity al Politecnico di Torino ed EURECOM, con un forte interesse per la sicurezza informatica. Esperienza in sviluppo software, networking, sicurezza dei sistemi e machine learning. Orientato alle soluzioni e proattivo, do il meglio sotto pressione e amo imparare cose nuove.",
+    "cvButton": "Scarica CV",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn"
+  },
+  "education": {
+  "sectionLabel": "TIMELINE ACCADEMICA",
+  "gpaLabel": "Media",
+  "items": [
+    {
+      "institution": "EURECOM",
+      "location": "Biot, Francia",
+      "degree": "Diplôme d'Ingénieur in Digital Security",
+      "period": "Set. 2025 – In corso",
+      "gpa": "4.0/4.0 (Previsto)"
+    },
+    {
+      "institution": "Politecnico di Torino",
+      "location": "Torino, Italia",
+      "degree": "Laurea Magistrale in Cybersecurity",
+      "period": "Set. 2024 – In corso",
+      "gpa": "4.0/4.0 (Previsto)"
+    },
+    {
+      "institution": "Politecnico di Torino",
+      "location": "Torino, Italia",
+      "degree": "Laurea Triennale in Ingegneria Informatica",
+      "period": "Set. 2021 – Set. 2024",
+      "gpa": "3.614/4.0 (107/110)"
+    },
+    {
+      "institution": "I.I.S. G.B. Pentasuglia",
+      "location": "Matera, Italia",
+      "degree": "Diploma di Maturità – Informatica e Telecomunicazioni",
+      "period": "Set. 2015 – Giu. 2020",
+      "gpa": "3.9/4.0 (97/100)"
+    }
+  ]
+},
+"projects": {
+  "markLabel": "Voto",
+  "viewLabel": "Vedi su GitHub",
+  "items": [
+    {
+      "title": "Side-Channel Power Attack su ASCON-AEAD128",
+      "description": "Implementazione firmware di ASCON-AEAD128 su microcontrollore ARM Cortex-M4, con attacco CPA che recupera la chiave segreta a 128 bit in 21.500 tracce di potenza, e contromisura di masking booleano validata con TVLA.",
+      "tags": ["C", "Python", "ChipWhisperer Husky", "ARM Cortex-M4"],
+      "mark": "19.5/20",
+      "repo": "https://github.com/Antonello-DiPede/SCA-Ascon128"
+    },
+    {
+      "title": "AI/ML per il Positioning UE in 5G O-RAN",
+      "description": "Modello basato su Variational Autoencoder per il rilevamento di anomalie NLoS nella localizzazione UWB, con il 97% di accuratezza, integrato come xApp nel framework FlexRIC.",
+      "tags": ["Python", "PyTorch", "FlexRIC", "OpenAirInterface"],
+      "mark": "18/20",
+      "repo": "https://github.com/Antonello-DiPede/VAE_NLOS_DETECTION"
+    },
+    {
+      "title": "Emulazione QEMU della NXP S32K3X8EVB",
+      "description": "Estensione del supporto ARM Cortex-M7 di QEMU per emulare la board S32K3X8EVB, con mapping UART/GPIO, runtime FreeRTOS e prototipo di Memory Protection Unit.",
+      "tags": ["C", "QEMU", "FreeRTOS", "ARM Cortex-M7"],
+      "mark": "30/30",
+      "repo": "https://github.com/Antonello-DiPede/NXP-S32K3X8EVB-Qemu-Emulation"
+    },
+    {
+      "title": "Analisi del Traffico CDN di YouTube",
+      "description": "Analisi del comportamento della CDN di YouTube su dati di rete reali: regressione e clustering per stimare il throughput dei flussi e rilevare cambiamenti nella topologia.",
+      "tags": ["Python", "Regressione", "PCA", "K-Means"],
+      "mark": "27/30",
+      "repo": "https://github.com/Antonello-DiPede/Content-Delivery-Network-of-YouTube-traffic"
+    },
+    {
+      "title": "NTIRE 2026 — Rilevamento Robusto di Immagini Generate da AI",
+      "description": "TransFusionNet: fusione di token CLIP e DINOv2 con transformer spaziale per distinguere immagini reali da quelle generate da AI, robusto a compressione JPEG, blur e resize.",
+      "tags": ["PyTorch", "CLIP", "DINOv2", "Transformers"],
+      "mark": "20/20",
+      "repo": "https://github.com/Antonello-DiPede/ImSecuSpring2026"
+    }
+  ]
+},
+"experience": {
+  "sectionLabel": "ESPERIENZA PROFESSIONALE",
+  "items": [
+    {
+      "company": "SAP Labs France",
+      "role": "Cybersecurity Intern – Security Testing",
+      "location": "Mougins, Francia",
+      "period": "Set. 2026 – Presente",
+      "logo": "/logos/sap.png",
+      "initials": "SAP",
+      "description": ""
+    },
+    {
+      "company": "B.M. del dott. Battista Masellis",
+      "role": "Tecnico Hardware e Software",
+      "location": "Matera, Italia",
+      "period": "Giu. 2017 – Set. 2024",
+      "logo": "/logos/bm.png",
+      "initials": "BM",
+      "description": "Diagnosi e riparazione di smartphone, computer e dispositivi elettronici in un negozio di riparazioni, con configurazione di computer personalizzati e impostazione dell'hardware secondo le specifiche dei clienti. Ho fornito assistenza tecnica ai clienti, comunicando problemi complessi in modo chiaro anche a chi non è esperto, sviluppando solide capacità di problem-solving, flessibilità e ottime prestazioni sotto pressione."
+    }
+  ]
+},
+"contact": {
+  "sectionLabel": "METTIAMOCI IN CONTATTO",
+  "intro": "Per proposte di lavoro, collaborazioni o anche solo per una chiacchierata, scrivimi pure.",
+  "formTitle": "Scrivimi un messaggio",
+  "nameField": "Nome",
+  "emailField": "Email",
+  "messageField": "Messaggio",
+  "sendButton": "Invia",
+  "sendingLabel": "Invio in corso…",
+  "successBody": "Grazie! Il messaggio è stato inviato, ti risponderò il prima possibile.",
+  "errorPrefix": "Qualcosa è andato storto nell'invio. Nel frattempo scrivimi direttamente a"
+},
+  "pages": {
+    "educationTitle": "Percorso di Studi",
+    "projectsTitle": "Progetti",
+    "experienceTitle": "Esperienza Lavorativa",
+    "contactTitle": "Contatti"
+    }
+}
