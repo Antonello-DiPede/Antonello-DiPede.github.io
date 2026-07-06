@@ -57,7 +57,7 @@ export default function Home() {
 
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="/resume.pdf"
+                href="/DiPedeAntonelloResume.pdf"
                 download
                 className="flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm transition hover:-translate-y-0.5"
                 style={{ background: 'var(--color-amber)', color: 'var(--color-ink)', boxShadow: '0 8px 24px var(--glow-amber-soft)' }}
