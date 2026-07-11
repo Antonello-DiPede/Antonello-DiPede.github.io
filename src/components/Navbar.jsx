@@ -40,6 +40,7 @@ export default function Navbar() {
   const links = [
     { to: '/', label: t.nav.home },
     { to: '/education', label: t.nav.education },
+    { to: '/certificates', label: t.nav.certificates },
     { to: '/projects', label: t.nav.projects },
     { to: '/experience', label: t.nav.experience },
     { to: '/contact', label: t.nav.contact },

@@ -5,6 +5,7 @@ import BackgroundBlobs from './components/BackgroundBlobs.jsx';
 import PageTransition from './components/PageTransition.jsx';
 import Home from './pages/Home.jsx';
 import Education from './pages/Education.jsx';
+import Certificates from './pages/Certificates.jsx';
 import Projects from './pages/Projects.jsx';
 import WorkExperience from './pages/WorkExperience.jsx';
 import Contact from './pages/Contact.jsx';
@@ -21,11 +22,12 @@ export default function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<PageTransition><Home /></PageTransition>} />
             <Route path="/education" element={<PageTransition><Education /></PageTransition>} />
+            <Route path="/certificates" element={<PageTransition><Certificates /></PageTransition>} />
             <Route path="/projects" element={<PageTransition><Projects /></PageTransition>} />
             <Route path="/experience" element={<PageTransition><WorkExperience /></PageTransition>} />
             <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
             {/* Qualsiasi altro percorso (digitato a mano, link rotto, tentativo di
-                path/URL injection) viene reindirizzato alla Home. Solo le 5 rotte
+                path/URL injection) viene reindirizzato alla Home. Solo le 6 rotte
                 sopra sono davvero raggiungibili. */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

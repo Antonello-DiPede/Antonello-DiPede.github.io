@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "education": "Percorso di Studi",
+    "certificates": "Certificazioni",
     "projects": "Progetti",
     "experience": "Esperienza",
     "contact": "Contatti"
@@ -45,6 +46,36 @@
       "degree": "Diploma di Maturità – Informatica e Telecomunicazioni",
       "period": "Set. 2015 – Giu. 2020",
       "gpa": "3.9/4.0 (97/100)"
+    }
+  ]
+},
+"certificates": {
+  "sectionLabel": "CERTIFICAZIONI",
+  "downloadLabel": "Scarica PDF",
+  "verifyLabel": "Verifica credenziale",
+  "credentialIdLabel": "ID credenziale",
+  "credentialIdHint": "Inserisci questo ID nella pagina di verifica per controllare l'autenticità.",
+  "items": [
+    {
+      "title": "Top Best Student",
+      "issuer": "EURECOM",
+      "description": "Premiato come il miglior studente di tutto EURECOM per il semestre Fall 2025 — il riconoscimento più alto assegnato tra l'intera coorte di studenti dell'istituto in quel semestre.",
+      "file": "/TOPBESTSTUDENTCertificateDiPedeAntonello.pdf",
+      "featured": true
+    },
+    {
+      "title": "Microsoft Office Specialist (MOS)",
+      "issuer": "Certiport",
+      "description": "Certificazione Microsoft Office Specialist, verificabile online inserendo l'ID credenziale nella pagina ufficiale Certiport.",
+      "file": "/MOS_DiPedeAntonello.pdf",
+      "verifyUrl": "https://www.certiport.com/portal/pages/credentialverification.aspx",
+      "credentialId": "xpM3-sFMQ"
+    },
+    {
+      "title": "Project Management Fundamentals",
+      "issuer": "EURECOM — Sessione Spring 2026",
+      "description": "Ho completato con successo 42 ore di formazione intensiva sui fondamenti del project management presso EURECOM, ottenendo un voto finale superiore all'80%.",
+      "file": "/ProjManCert.pdf"
     }
   ]
 },
@@ -126,6 +157,7 @@
 },
   "pages": {
     "educationTitle": "Percorso di Studi",
+    "certificatesTitle": "Certificazioni",
     "projectsTitle": "Progetti",
     "experienceTitle": "Esperienza Lavorativa",
     "contactTitle": "Contatti"

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "education": "Education",
+    "certificates": "Certificates",
     "projects": "Projects",
     "experience": "Work Experience",
     "contact": "Contact"
@@ -45,6 +46,36 @@
       "degree": "High School Diploma – Computer Science and Telecommunications",
       "period": "Sep 2015 – Jun 2020",
       "gpa": "3.9/4.0 (97/100)"
+    }
+  ]
+},
+"certificates": {
+  "sectionLabel": "CERTIFICATIONS",
+  "downloadLabel": "Download PDF",
+  "verifyLabel": "Verify credential",
+  "credentialIdLabel": "Credential ID",
+  "credentialIdHint": "Enter this ID on the verification page to check authenticity.",
+  "items": [
+    {
+      "title": "Top Best Student",
+      "issuer": "EURECOM",
+      "description": "Awarded Top Best Student across all of EURECOM for the Fall 2025 semester — the highest recognition given among the entire student cohort at the institute that semester.",
+      "file": "/TOPBESTSTUDENTCertificateDiPedeAntonello.pdf",
+      "featured": true
+    },
+    {
+      "title": "Microsoft Office Specialist (MOS)",
+      "issuer": "Certiport",
+      "description": "Microsoft Office Specialist certification, verifiable online by entering the credential ID on the official Certiport page.",
+      "file": "/MOS_DiPedeAntonello.pdf",
+      "verifyUrl": "https://www.certiport.com/portal/pages/credentialverification.aspx",
+      "credentialId": "xpM3-sFMQ"
+    },
+    {
+      "title": "Project Management Fundamentals",
+      "issuer": "EURECOM — Spring 2026 session",
+      "description": "Successfully completed 42 hours of intensive training in project management fundamentals at EURECOM, achieving a final grade above 80%.",
+      "file": "/ProjManCert.pdf"
     }
   ]
 },
@@ -126,6 +157,7 @@
 },
   "pages": {
     "educationTitle": "Education",
+    "certificatesTitle": "Certificates",
     "projectsTitle": "Projects",
     "experienceTitle": "Work Experience",
     "contactTitle": "Contact"
