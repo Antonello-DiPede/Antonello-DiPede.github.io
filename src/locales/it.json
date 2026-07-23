@@ -76,6 +76,22 @@
       "issuer": "EURECOM — Sessione Spring 2026",
       "description": "Ho completato con successo 42 ore di formazione intensiva sui fondamenti del project management presso EURECOM, ottenendo un voto finale superiore all'80%.",
       "file": "/ProjManCert.pdf"
+    },
+    {
+        "title": "NSE 1 — Cybersecurity and Cloud Fundamentals",
+        "issuer": "Fortinet",
+        "description": "Completato il corso Fortinet NSE 1 (11 ore), superando con successo i quiz di tutti i 10 moduli su minacce informatiche, crittografia, sicurezza di rete, controllo degli accessi e sicurezza cloud.",
+        "file": "/NSE1.pdf",
+        "verifyUrl": "https://www.credly.com/badges/b15abeb4-399d-401a-a8eb-1a80b107d417"
+
+    },
+    {
+        "title": "NSE 2 — Introduction to Next Generation Firewall",
+        "issuer": "Fortinet",
+        "description": "Completato il corso Fortinet NSE 2 (2 ore), superando l'esame finale su policy dei firewall, autenticazione utente, web filtering, SD-WAN e SASE.",
+        "file": "/NSE2.pdf",
+        "verifyUrl": "https://www.credly.com/badges/3d549c43-22f1-4f29-82ba-96971b208d3e"
+
     }
   ]
 },

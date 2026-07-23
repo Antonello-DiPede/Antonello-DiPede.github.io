@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from '../components/BrandIcons.jsx';
+import { GithubIcon, LinkedinIcon, CredlyIcon } from '../components/BrandIcons.jsx';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import GlassPanel from '../components/GlassPanel.jsx';
 
@@ -17,6 +17,7 @@ const CONTACT_INFO = {
   location: 'Antibes, France',
   github: 'https://github.com/Antonello-DiPede',
   linkedin: 'https://www.linkedin.com/in/antonello-di-pede',
+  credly: 'https://www.credly.com/users/antonellodipede',
 };
 
 const iconBoxStyle = {
@@ -145,6 +146,16 @@ export default function Contact() {
                 style={{ ...iconBoxStyle, color: 'var(--color-icon-text)' }}
               >
                 <LinkedinIcon size={18} />
+              </a>
+              <a
+                href={CONTACT_INFO.credly}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Credly"
+                className="p-2.5 rounded-xl transition hover:-translate-y-0.5"
+                style={{ ...iconBoxStyle, color: 'var(--color-icon-text)' }}
+              >
+                <CredlyIcon size={18} />
               </a>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { Download } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from '../components/BrandIcons.jsx';
+import { GithubIcon, LinkedinIcon, CredlyIcon } from '../components/BrandIcons.jsx';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import GlassPanel from '../components/GlassPanel.jsx';
 import AnimatedLock from '../components/AnimatedLock.jsx';
@@ -7,6 +7,8 @@ import AnimatedLock from '../components/AnimatedLock.jsx';
 const SOCIAL_LINKS = {
   github: 'https://github.com/Antonello-DiPede',
   linkedin: 'https://www.linkedin.com/in/antonello-di-pede',
+  credly: 'https://www.credly.com/users/antonellodipede',
+
 };
 
 export default function Home() {
@@ -93,6 +95,21 @@ export default function Home() {
                 }}
               >
                 <LinkedinIcon size={18} />
+              </a>
+              <a
+                href={SOCIAL_LINKS.credly}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Credly"
+                className="p-2.5 rounded-xl transition hover:-translate-y-0.5"
+                style={{
+                    background: 'var(--surface-bg)',
+                    border: '1px solid var(--surface-border)',
+                    color: 'var(--color-icon-text)',
+                    boxShadow: 'inset 0 1px 0 var(--icon-inset-highlight)',
+                }}
+              >
+                <CredlyIcon size={18} />
               </a>
             </div>
           </div>

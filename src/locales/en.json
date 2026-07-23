@@ -76,6 +76,22 @@
       "issuer": "EURECOM — Spring 2026 session",
       "description": "Successfully completed 42 hours of intensive training in project management fundamentals at EURECOM, achieving a final grade above 80%.",
       "file": "/ProjManCert.pdf"
+    },
+    {
+        "title": "NSE 1 — Cybersecurity and Cloud Fundamentals",
+        "issuer": "Fortinet",
+        "description": "Completed the Fortinet NSE 1 course (11 hours), successfully passing all quizzes across 10 modules covering cyber threats, cryptography, network security, access control, and cloud security.",
+        "file": "/NSE1.pdf",
+        "verifyUrl": "https://www.credly.com/badges/b15abeb4-399d-401a-a8eb-1a80b107d417"
+
+    },
+    {
+        "title": "NSE 2 — Introduction to Next Generation Firewall",
+        "issuer": "Fortinet",
+        "description": "Completed the Fortinet NSE 2 course (2 hours), passing the final exam on firewall policies, user authentication, web filtering, SD-WAN, and SASE.",
+        "file": "/NSE2.pdf",
+        "verifyUrl": "https://www.credly.com/badges/3d549c43-22f1-4f29-82ba-96971b208d3e"
+
     }
   ]
 },
