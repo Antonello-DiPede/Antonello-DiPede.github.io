@@ -92,6 +92,13 @@
         "file": "/NSE2.pdf",
         "verifyUrl": "https://www.credly.com/badges/3d549c43-22f1-4f29-82ba-96971b208d3e"
 
+    },
+    {
+        "title": "NSE 3 — FortiGate 7.6 Operator",
+        "issuer": "Fortinet",
+        "description": "Completato il corso Fortinet NSE 3 (8 ore) sulle operazioni quotidiane su FortiGate: configurazione delle funzionalità principali, VPN per l'accesso remoto sicuro, restrizione dell'accesso alle risorse di rete e monitoraggio di log e indicatori di sistema.",
+        "file": "/NSE3.pdf",
+        "verifyUrl": "https://www.credly.com/badges/2dcdf6e5-f9be-40ca-ab63-db1e969e364b"
     }
   ]
 },

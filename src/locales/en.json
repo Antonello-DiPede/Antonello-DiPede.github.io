@@ -91,7 +91,13 @@
         "description": "Completed the Fortinet NSE 2 course (2 hours), passing the final exam on firewall policies, user authentication, web filtering, SD-WAN, and SASE.",
         "file": "/NSE2.pdf",
         "verifyUrl": "https://www.credly.com/badges/3d549c43-22f1-4f29-82ba-96971b208d3e"
-
+    },
+    {
+        "title": "NSE 3 — FortiGate 7.6 Operator",
+        "issuer": "Fortinet",
+        "description": "Completed the Fortinet NSE 3 course (8 hours) on day-to-day FortiGate operations: configuring core features, securely connecting remote users via VPN, restricting access to network resources, and monitoring system logs and indicators.",
+        "file": "/NSE3.pdf",
+        "verifyUrl": "https://www.credly.com/badges/2dcdf6e5-f9be-40ca-ab63-db1e969e364b"
     }
   ]
 },
